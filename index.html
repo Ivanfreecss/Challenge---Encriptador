@@ -11,12 +11,36 @@
 </head>
 <body>
     <header>
-        <input type="text" id="textoEncriptado">
-        <textarea name="texto" id="textoDesencriptado" cols="30" rows="10"></textarea>
-        <button type="button" id="botonEncriptar">Encriptar</button>
-        <button type="button" id="botonDesencriptado">Desencriptar</button>
-        <button type="button" id="botonCopiar">Copiar</button>
+        <img src="imagenes/Logo.png" alt="Logo de Alura" class="logo">
     </header>
+    <main>
+        <section class="seccion_1">
+                <textarea name="texto" id="textoEncriptado" cols="30" rows="10" placeholder="Ingrese el texto aqui" focus></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="boton" type="button" value="Encriptar" id="botonEncriptar">Encriptar</button>
+                <button class="boton" type="button" value="Desencriptar" id="botonDesencriptado">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="imagenes/Muñeco.png" alt="Muneco">
+            </div>
+                    <textarea name="mensaje" id="textoDesencriptado" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <div class="parrafo">
+                <p>Copia el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="boton_seccion_2">
+                <button class="boton_Copiar" type="button" value="Copiar" id="botonCopiar">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy By Ivan Guerrero Villamizar</p>
+    </footer>
 </body>
 <script>
     var btn = document.querySelector('#botonEncriptar'); // Selecciona el boton encriptar
